@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+
+body {
+
+    main {
+        /*border: 1px solid red;*/
+        width: 450px;
+        margin: 20px auto;
+        /*dar espacio arriba de 20px y centrar el body al medio*/
+        border-radius: 10px;
+        padding-bottom: 20px;
+
+        box-shadow: 0 0 10px rgb(128, 121, 121);
+        /*0px = no se mueve a la derecha / 0px = no se mueve hacia abajo / 10px = sombra difusa alrededor
+         Se ve igual en todos los lados*/
+
+
+        background-color: rgb(227, 245, 245);
+        /*fondo de la calculadora imc*/
+
+        h1 {
+            /*border: 1px solid red;*/
+            font-size: 30px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+
+        }
+
+        #calculadora{
+            border: 1px solid red;
+            padding: 20px 20px 20px 20px
+        }
+
+
+        /* Etiquetas */
+        #calculadora label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 28%;
+        }
+
+        /* Inputs */
+        #calculadora input {
+            width: 70%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+
+
+        /* Contenedor de botones */
+        #calculadora button {
+            width: 48%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Botón REINICIAR */
+        #limpiar {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Botón CALCULAR */
+        #calcularIMC {
+            background-color: #00a8a8;
+            color: white;
+        }
+
+        /* Espaciado entre botones */
+        #limpiar,
+        #calcularIMC {
+            display: inline-block;
+            margin-top: 5px;
+            
+          
+        }
+
+        section {
+            /*border: 1px solid red;*/
+            text-align: center;
+
+            #valorNombre {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+        }
+
+
+    }
+
+
+
+}
+
+
+
+/*Estilos para la parte inferior de la barra de colores*/
+
+
+/* Barra de colores */
+.imc-barra {
+    width: 100%;
+    height: 8px;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.segmento {
+    flex: 1;
+}
+
+.bajo {
+    background-color: #f9fb5a;
+    /* Amarillo */
+}
+
+.normal {
+    background-color: #3cb44b;
+    /* Verde */
+}
+
+.sobrepeso {
+    background-color: #ff8c69;
+    /* Durazno/Rosa claro */
+}
+
+.obesidad {
+    background-color: #be0505;
+    /* Fucsia */
+}
+
+/* Leyenda */
+.imc-leyenda {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.imc-leyenda div h4 {
+    font-size: 14px;
+    color: #a19a9a;
+    margin-bottom: 15px;
+}
+
+.imc-leyenda div p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}

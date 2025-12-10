@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Calculadora IMC</h1>
+        <form id="calculadora">
+            <label for="">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresar nombre" required>
+            <label for="">Peso (kg):</label>
+            <input type="number" id="peso" placeholder="Peso en Kg" required>
+            <label for="">Estatura (cm):</label>
+            <input type="number" id="estatura" placeholder="Estatura en cm">
+            <button id="limpiar">REINICIAR</button>
+            <button type="submit" id="calcularIMC">CALCULAR</button>
+        </form>
+
+        <section>
+            <h2 id="valorNombre"></h2>
+            <h2>TU IMC ES:</h2>
+            <h3 id="resultado"></h3>
+            <p id="rangoIMC"></p>
+
+        </section>
+
+
+        <div class="imc-barra">
+            <div class="segmento bajo"></div>
+            <div class="segmento normal"></div>
+            <div class="segmento sobrepeso"></div>
+            <div class="segmento obesidad"></div>
+        </div>
+
+        <div class="imc-leyenda">
+            <div>
+                <h4>PESO BAJO</h4>
+                <p>&lt; 18.5</p>
+            </div>
+            <div>
+                <h4>NORMALIDAD</h4>
+                <p>18.5 - 25</p>
+            </div>
+            <div>
+                <h4>SOBREPESO</h4>
+                <p>25 - 30</p>
+            </div>
+            <div>
+                <h4>OBESIDAD</h4>
+                <p>&ge; 30</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
